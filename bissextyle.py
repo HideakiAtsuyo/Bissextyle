@@ -1,10 +1,8 @@
 import os
-annee = input("Saisissez une année : ")
+annee = int(input("Saisissez une année : "))
 
-annee = int(annee)
-
-if annee % 400 == 0 and annee % 4 == 0:
-    print("L'année saisie est bissextile.")
+if annee % 400 == 0:
+    print("L'année saisie est bissextile.\n")
 else:
-    print("L'année saisie n'est pas bissextile.")
+    print("L'année saisie n'est pas bissextile.\n")
 os.system("pause")
